@@ -1,5 +1,31 @@
+/* App.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #343a40;
+  color: white;
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
 .App {
   text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.App-light {
+  background-color: white;
+  color: black;
 }
 
 .App-logo {
@@ -39,4 +65,71 @@
 .blank {
   color: aqua;
   background-color: #282c34;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+/* App.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.accordion-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.accordion-light {
+  background-color: white;
+  color: black;
+}
+
+.accordion-button-dark {
+  background-color: #495057;
+  color: white;
+}
+
+.accordion-button-light {
+  background-color: white;
+  color: black;
+}
+
+.accordion-body-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.accordion-body-light {
+  background-color: white;
+  color: black;
 }

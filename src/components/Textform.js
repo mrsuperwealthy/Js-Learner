@@ -7,6 +7,12 @@ export default function Textform(props) {
         // console.log("Uppercase was clicked" );
         setText(text.toUpperCase());
     }
+    const handleLowCLick = ()=>{
+        setText(text.toLowerCase());
+    }
+    const clearClick=()=>{
+        setText(" ")
+    }
     const handleOnChange = (event)=>{ 
         // console.log("On Change");
         setText(event.target.value);
@@ -20,7 +26,11 @@ export default function Textform(props) {
         <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
         </div>
-        <button className="btn btn-success" onClick={handleUpClick}>Convert to uppercase</button>
+        <button  className="btn btn-success" style={{marginRight: '10px'}} onClick={handleUpClick}>Convert to uppercase</button>
+        <button className="btn btn-success" style={{marginRight: '10px'}} onClick={handleLowCLick}>Convert to Lower</button>
+        <button className="btn btn-success" onClick={clearClick}>Clear</button>
+
+
     </div>
     <div className='container' style={{marginTop: '20px'}}>
         <h1>Your Text Summary</h1>
